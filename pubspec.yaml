@@ -1,0 +1,3 @@
+name: bl
+dependencies:
+  angular2: "^3.0.0-beta"
