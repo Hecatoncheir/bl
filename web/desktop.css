@@ -1,4 +1,4 @@
-@media (min-width: 767px) {
+@media (min-width: 768px) {
 
   main .main-information {
     font-size: 0.8em;
@@ -7,6 +7,7 @@
 
   main .main-information nav {
     position: relative;
+    flex-direction: row;
   }
 
   main .main-information nav a {
