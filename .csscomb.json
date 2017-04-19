@@ -21,5 +21,30 @@
   "unitless-zero": true,
   "vendor-prefix-align": true,
   "strip-spaces": true,
-  "sort-order": [ [ "$variable" ], [ "$include" ], [ "top", "left", "right","bottom" ], [ "margin", "padding" ], [ "border", "background" ] ]
+  "sort-order": [
+    [
+      "$variable"
+    ],
+    [
+      "$include"
+    ],
+    [
+      "top",
+      "left",
+      "right",
+      "bottom"
+    ],
+    [
+      "margin",
+      "padding"
+    ],
+    [
+      "border",
+      "background"
+    ],
+    [
+      "animation-duration",
+      "animation-name"
+    ]
+  ]
 }

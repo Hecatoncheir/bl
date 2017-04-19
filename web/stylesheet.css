@@ -168,9 +168,12 @@ img {
   }
 
   main .vitaliy-vostrikov {
-    align-self: flex-end;
-    animation-duration: 500ms;
+    padding: 0 6px 1px 6px;
+
+    animation-duration: 700ms;
     animation-name: slideInFromLeft;
+
+    align-self: flex-end;
     display: flex;
     flex-shrink: 0;
     font-size: 2rem;
@@ -182,11 +185,31 @@ img {
     transform-origin: left top;
   }
 
+  main .vitaliy-vostrikov:hover {
+    background-color: black;
+    color: white;
+  }
+
   main .articles {
     margin: 12rem;
 
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @keyframes slideInFromBottom {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    }
+  }
+
+  main .artical-animate {
+    animation: slideInFromBottom 0.8s ease-in-out forwards;
   }
 
   main .articles article {
@@ -230,9 +253,10 @@ img {
   main .navigation {
     right: 0;
 
-    align-self: center;
-    animation-duration: 500ms;
+    animation-duration: 700ms;
     animation-name: slideInFromRight;
+
+    align-self: center;
     flex-direction: column;
     flex-shrink: 0;
     margin-top: -16rem;
