@@ -1,13 +1,15 @@
-@media (min-width: 768px) {
-
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
   main .main-information {
     font-size: 0.8em;
   }
 
 
   main .main-information nav {
-    position: relative;
     flex-direction: row;
+    position: relative;
   }
 
   main .main-information nav a {
@@ -65,6 +67,7 @@
 
   main .articles article {
     margin: 3rem;
+
     margin-right: 2rem;
   }
 
@@ -88,12 +91,12 @@
 
   main .navigation {
     right: 0;
-    display: block;
 
     animation-duration: 700ms;
     animation-name: slideInFromRight;
 
     align-self: center;
+    display: block;
     flex-direction: column;
     flex-shrink: 0;
     margin-top: -16rem;

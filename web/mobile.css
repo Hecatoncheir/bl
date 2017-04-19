@@ -1,4 +1,4 @@
-@media (min-width: 94px) {
+@media only screen and (min-width: 94px) {
   html {
     font-size: 62.5%;
   }
@@ -56,9 +56,9 @@
   }
 
   main {
+    align-items: stretch;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
   }
 
   main .main-information {
@@ -74,11 +74,10 @@
   }
 
   main .main-information nav a {
-    margin-top: 5rem;
-    margin-right: 5rem;
-
     font-size: 4rem;
     font-weight: bold;
+    margin-right: 5rem;
+    margin-top: 5rem;
     text-transform: lowercase;
   }
 
@@ -96,10 +95,10 @@
   main .articles {
     margin: 12rem;
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   @keyframes slideInFromBottom {
@@ -144,11 +143,11 @@
   }
 
   main .navigation {
-      display: none;
+    display: none;
   }
 }
 
-@media (min-width: 324px) {
+@media only screen and (min-width: 324px) {
   main .main-information nav {
     display: flex;
   }
