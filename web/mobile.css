@@ -1,0 +1,151 @@
+@media (min-width: 94px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  a {
+    display: inline-block;
+    padding-bottom: 2px;
+    position: relative;
+  }
+
+  a:before {
+    left: 0;
+    bottom: 0;
+
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    transition: width 0s ease, background 0.5s ease;
+    width: 0;
+  }
+
+  a:after {
+    right: 0;
+    bottom: 0;
+
+    background: black;
+
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    transition: width 0.5s ease;
+    width: 0;
+  }
+
+  a:hover:before {
+    background: black;
+
+    transition: width 0.5s ease;
+    width: 100%;
+  }
+
+  a:hover:after {
+    background: transparent;
+
+    transition: all 0s ease;
+    width: 100%;
+  }
+
+  body {
+    background-color: white;
+    color: black;
+    font-family: 'Cousine', monospace;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  main .main-information {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
+
+  main .main-information nav {
+    display: flex;
+  }
+
+  main .main-information nav a {
+    margin-top: 5rem;
+    margin-right: 5rem;
+
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: lowercase;
+  }
+
+  main .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  main .vitaliy-vostrikov {
+    display: none;
+  }
+
+  main .articles {
+    margin: 12rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  @keyframes slideInFromBottom {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    }
+  }
+
+  main .artical-animate {
+    animation: slideInFromBottom 0.8s ease-in-out forwards;
+  }
+
+  main .articles article {
+    margin: 6rem;
+
+    flex: 1;
+    margin-right: 18rem;
+  }
+
+  main .articles article h2 {
+    font-size: 4rem;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  main .articles article .tags {
+    color: #5a5a5a;
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-transform: lowercase;
+  }
+
+  main .articles .design {
+    margin: 10px 0;
+  }
+
+  main .articles .design img {
+    border-radius: 5px;
+    width: 200px;
+  }
+
+  main .navigation {
+      display: none;
+  }
+}

@@ -1,0 +1,107 @@
+@media (min-width: 767px) {
+
+  main .main-information {
+    font-size: 0.8em;
+  }
+
+
+  main .main-information nav {
+    position: relative;
+  }
+
+  main .main-information nav a {
+    margin: 1rem;
+
+    font-size: 1.4rem;
+  }
+
+  @keyframes slideInFromLeft {
+    from {
+      margin-left: -3rem;
+    }
+
+    to {
+      margin-left: -0.2rem;
+    }
+  }
+
+  main .vitaliy-vostrikov {
+    padding: 1px 6px;
+
+    animation-duration: 700ms;
+    animation-name: slideInFromLeft;
+
+    align-self: flex-end;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: -0.2rem;
+    position: fixed;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    transition: all 10ms ease;
+  }
+
+  main .vitaliy-vostrikov:hover {
+    background-color: black;
+    color: white;
+    margin-left: 0;
+  }
+
+  main .content {
+    height: 80vh;
+  }
+
+  main .articles {
+    margin: 12rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  main .articles article {
+    margin: 3rem;
+    margin-right: 2rem;
+  }
+
+  main .articles article h2 {
+    font-size: 1.4rem;
+  }
+
+  main .articles article .tags {
+    font-size: 1rem;
+  }
+
+  @keyframes slideInFromRight {
+    from {
+      margin-right: -3rem;
+    }
+
+    to {
+      margin-right: -0.2rem;
+    }
+  }
+
+  main .navigation {
+    right: 0;
+    display: block;
+
+    animation-duration: 700ms;
+    animation-name: slideInFromRight;
+
+    align-self: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-top: -16rem;
+    position: fixed;
+    transform: rotate(-90deg);
+    transform-origin: right 3rem;
+  }
+
+  main .navigation a {
+    margin: 0 1rem;
+  }
+}
