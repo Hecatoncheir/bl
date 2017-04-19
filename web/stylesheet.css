@@ -59,19 +59,61 @@ img {
 
 @media (min-width: 100px) {
   html {
-     font-size: 62.5%;
+    font-size: 62.5%;
+  }
+
+  a {
+    display: inline-block;
+    padding-bottom: 2px;
+    position: relative;
+  }
+
+  a:before {
+    left: 0;
+    bottom: 0;
+
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    transition: width 0s ease, background 0.5s ease;
+    width: 0;
+  }
+
+  a:after {
+    right: 0;
+    bottom: 0;
+
+    background: black;
+
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    transition: width 0.5s ease;
+    width: 0;
+  }
+
+  a:hover:before {
+    background: black;
+
+    transition: width 0.5s ease;
+    width: 100%;
+  }
+
+  a:hover:after {
+    background: transparent;
+
+    transition: all 0s ease;
+    width: 100%;
   }
 
   body {
-    font-family: 'Cousine', monospace;
     /*background-color: #F0F2F6;*/
     background-color: white;
     /*color: #444c59;*/
     color: black;
-  }
-
-  a:hover {
-    text-decoration: underline;
+    font-family: 'Cousine', monospace;
   }
 
   main {
@@ -82,27 +124,27 @@ img {
 
 
 @media (min-width: 600px) {
-  body {
-    /*background-color: #dde3f0;*/
-  }
-
   main {
     align-items: stretch;
   }
 
+
   main .main-information {
     display: flex;
-    justify-content: center;
     font-size: 0.8em;
+    justify-content: center;
     margin-top: 4rem;
   }
 
+
   main .main-information nav {
     display: flex;
+    position: relative;
   }
 
   main .main-information nav a {
-    padding: 1rem;
+    margin: 1rem;
+
     font-size: 1.4rem;
     font-weight: bold;
     text-transform: lowercase;
@@ -115,67 +157,92 @@ img {
     justify-content: space-between;
   }
 
+  @keyframes slideInFromLeft {
+    from {
+      margin-left: -3rem;
+    }
+
+    to {
+      margin-left: -0.2rem;
+    }
+  }
+
   main .vitaliy-vostrikov {
+    align-self: flex-end;
+    animation-duration: 500ms;
+    animation-name: slideInFromLeft;
     display: flex;
+    flex-shrink: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: -0.2rem;
+    position: fixed;
+    text-transform: uppercase;
     transform: rotate(-90deg);
     transform-origin: left top;
-    text-transform: uppercase;
-    align-self: flex-end;
-    font-weight: bold;
-    font-size: 2rem;
-    margin-left: -0.2rem;
-    flex-shrink: 0;
-    position: fixed;
   }
 
   main .articles {
+    margin: 12rem;
+
     display: flex;
     flex-wrap: wrap;
-    margin: 12rem;
   }
 
   main .articles article {
-    margin-right: 2rem;
-    flex: 1;
     margin: 3rem;
+
+    flex: 1;
+    margin-right: 2rem;
   }
 
   main .articles article h2 {
-    text-transform: uppercase;
-    font-weight: normal;
     font-size: 1.4rem;
+    font-weight: normal;
+    text-transform: uppercase;
   }
 
   main .articles article .tags {
-    margin-top: 0.8rem;
-    color: #5A5A5A;
-    text-transform: lowercase;
+    color: #5a5a5a;
     font-size: 1rem;
+    margin-top: 0.8rem;
+    text-transform: lowercase;
   }
-
 
   main .articles .design {
     margin: 10px 0;
   }
+
   main .articles .design img {
     border-radius: 5px;
     width: 200px;
   }
 
+  @keyframes slideInFromRight {
+    from {
+      margin-right: -3rem;
+    }
+
+    to {
+      margin-right: -0.2rem;
+    }
+  }
   main .navigation {
+    right: 0;
+
+    align-self: center;
+    animation-duration: 500ms;
+    animation-name: slideInFromRight;
+    flex-direction: column;
+    flex-shrink: 0;
     margin-top: -16rem;
+    position: fixed;
     transform: rotate(-90deg);
     transform-origin: right 3rem;
-
-    flex-shrink: 0;
-    align-self: center;
-    flex-direction: column;
-    position: fixed;
-    right: 0;
   }
 
   main .navigation a {
-    padding: 1rem;
+    margin: 0 1rem;
   }
 
   /*main {
