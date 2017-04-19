@@ -153,6 +153,15 @@ img {
     font-size: 1rem;
   }
 
+
+  main .articles .design {
+    margin: 10px 0;
+  }
+  main .articles .design img {
+    border-radius: 5px;
+    width: 200px;
+  }
+
   main .navigation {
     margin-top: -16rem;
     transform: rotate(-90deg);
