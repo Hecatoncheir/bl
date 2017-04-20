@@ -3,13 +3,13 @@
     font-size: 62.5%;
   }
 
-  a {
+  main header a, .vitaliy-vostrikov a, .navigation a, .articles a {
     display: inline-block;
     padding-bottom: 2px;
     position: relative;
   }
 
-  a:before {
+  main header a:before, .vitaliy-vostrikov a:before, .navigation a:before, .articles a:before {
     left: 0;
     bottom: 0;
 
@@ -21,7 +21,7 @@
     width: 0;
   }
 
-  a:after {
+  main header a:after, .vitaliy-vostrikov a:after, .navigation a:after, .articles a:after {
     right: 0;
     bottom: 0;
 
@@ -35,14 +35,14 @@
     width: 0;
   }
 
-  a:hover:before {
+  main header a:hover:before, .vitaliy-vostrikov a:hover:before, .navigation a:hover:before, .articles a:hover:before {
     background: black;
 
     transition: width 0.5s ease;
     width: 100%;
   }
 
-  a:hover:after {
+  main header a:hover:after, .vitaliy-vostrikov a:hover:after, .navigation a:hover:after, .articles a:hover:after {
     background: transparent;
 
     transition: all 0s ease;
@@ -83,7 +83,7 @@
 
   main .main-information .navigation {
     display: block;
-    margin-left: 10rem
+    margin-left: 10rem;
   }
 
   main .content {
@@ -149,6 +149,74 @@
 
   main .navigation {
     display: none;
+  }
+
+  main .content .post {
+    margin: 0 auto;
+
+    font-size: 4.2rem;
+    margin-top: 12rem;
+    width: 76rem;
+  }
+
+  .post a {
+    color: #53a3da;
+  }
+
+  .post a:hover {
+    color: #e64452;
+  }
+
+  .post code {
+    display: block;
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+  .post p {
+    line-height: 5.8rem;
+    margin-bottom: 6.6rem;
+    margin-top: 3.3rem;
+  }
+
+  .post img {
+    margin: 3rem;
+
+    border-radius: 1rem;
+    box-shadow: 0 8px 18px rgba(72, 80, 88, 0.2), 0 2px 3px rgba(0, 0, 0, 0.1);
+    transition: all 200ms;
+  }
+
+  .post img:hover {
+    box-shadow: 0 8px 4rem rgba(72, 80, 88, 0.3), 0 2px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  blockquote {
+    margin: 12rem 0;
+    padding: 0 1em;
+
+    border-left: 0.25em solid #dfe2e5;
+    color: #6a737d;
+  }
+
+  .post pre {
+    padding: 16px;
+
+    background-color: #f6f8fa;
+    border-radius: 3px;
+    font-size: 85%;
+    line-height: 1.45;
+    overflow: auto;
+  }
+
+  .post h2 {
+    border-bottom: 1px solid #eaecef;
+    font-size: 4.7rem;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 1.6rem;
+    margin-top: 24px;
+    padding-bottom: 0.3em;
   }
 }
 

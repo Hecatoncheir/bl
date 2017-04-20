@@ -12,7 +12,7 @@
   }
 
   main .main-information .navigation {
-    display: none
+    display: none;
   }
 
   main .main-information nav a {
@@ -58,6 +58,10 @@
 
   main .content {
     height: 80vh;
+  }
+
+  main .content .post {
+    /*margin: 10rem;*/
   }
 
   main .articles {
@@ -110,5 +114,42 @@
 
   main .navigation a {
     margin: 0 1rem;
+  }
+
+  main .content .post {
+    font-size: 2rem;
+    width: 80%;
+  }
+
+  .post code {
+    display: block;
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+  .post p {
+    margin: 6.6rem 0;
+
+    line-height: 3rem;
+  }
+
+  .post .columns {
+    column-count: 3;
+  }
+
+  .post h1 {
+    font-size: 5rem;
+  }
+
+  .post h2 {
+    font-size: 3rem;
+  }
+
+  blockquote {
+    margin: 2rem 0;
+  }
+
+  blockquote p {
+    column-count: 0;
   }
 }
