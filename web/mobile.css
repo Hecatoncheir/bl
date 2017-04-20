@@ -81,6 +81,11 @@
     text-transform: lowercase;
   }
 
+  main .main-information .navigation {
+    display: block;
+    margin-left: 10rem
+  }
+
   main .content {
     display: flex;
     flex-direction: row;
