@@ -53,3 +53,11 @@ img {
   height: auto;
   max-width: 100%;
 }
+
+ul li {
+  margin-bottom: 16px;
+}
+
+ul li:before {
+  content: "- "
+}
