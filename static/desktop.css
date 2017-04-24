@@ -127,10 +127,16 @@
     width: 100%;
   }
 
-  .post p {
+  .post p{
     margin: 6.6rem 0;
     line-height: 3rem;
     font-size: 1.6rem;
+  }
+
+  .post li {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 3rem;
   }
 
   .post .columns {
@@ -143,13 +149,5 @@
 
   .post h2 {
     font-size: 3rem;
-  }
-
-  blockquote {
-    margin: 2rem 0;
-  }
-
-  blockquote p {
-    column-count: 0;
   }
 }

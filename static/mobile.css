@@ -172,8 +172,8 @@
     width: 100%;
   }
 
-  .post p {
-    line-height: 5.8rem;
+  .post p, .post li {
+    line-height: 6.8rem;
     margin-bottom: 6.6rem;
     margin-top: 3.3rem;
   }

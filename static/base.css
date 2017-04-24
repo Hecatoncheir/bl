@@ -101,7 +101,7 @@ p, hr, ul, ol, dl, blockquote, pre, fieldset, figure {
 blockquote {
   border-color: #e1e6ef;
   border-radius: 2px;
-  margin: 12rem 0;
+  margin: 6rem 0;
   padding: 0 1em;
   /*border-left: 0.25em solid #dfe2e5;*/
 
@@ -115,5 +115,4 @@ blockquote {
   border-radius: 4px;
   /*box-shadow: 0 1px 1px rgba(0,0,0,0.05);*/
   box-shadow: 0 8px 16px rgba(72, 80, 88, 0.2), 0 2px 3px rgba(0, 0, 0, 0.1);
-  margin-bottom: 12rem;
 }
