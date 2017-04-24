@@ -127,14 +127,16 @@
     width: 100%;
   }
 
-  .post p{
+  .post p {
     margin: 6.6rem 0;
-    line-height: 3rem;
+
     font-size: 1.6rem;
+    line-height: 3rem;
   }
 
   .post li {
     margin: 0;
+
     font-size: 1.6rem;
     line-height: 3rem;
   }

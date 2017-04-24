@@ -99,12 +99,12 @@ p, hr, ul, ol, dl, blockquote, pre, fieldset, figure {
 }
 
 blockquote {
-  border-color: #e1e6ef;
-  border-radius: 2px;
   margin: 6rem 0;
   padding: 0 1em;
-  /*border-left: 0.25em solid #dfe2e5;*/
 
+  border-color: #e1e6ef;
+  border-radius: 2px;
+  /*border-left: 0.25em solid #dfe2e5;*/
   color: #6a737d;
 }
 
