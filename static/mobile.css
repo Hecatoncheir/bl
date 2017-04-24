@@ -52,7 +52,6 @@
   body {
     background-color: white;
     color: black;
-    font-family: 'Cousine', monospace;
   }
 
   main {
@@ -189,14 +188,6 @@
 
   .post img:hover {
     box-shadow: 0 8px 4rem rgba(72, 80, 88, 0.3), 0 2px 3px rgba(0, 0, 0, 0.1);
-  }
-
-  blockquote {
-    margin: 12rem 0;
-    padding: 0 1em;
-
-    border-left: 0.25em solid #dfe2e5;
-    color: #6a737d;
   }
 
   .post pre {
