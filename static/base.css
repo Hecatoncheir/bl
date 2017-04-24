@@ -63,6 +63,8 @@ ul li:before {
 }
 
 body {
+  background-color: #fcfcfc;
+  color: #26161d;
   font-family: 'Cousine', monospace;
 }
 

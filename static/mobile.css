@@ -49,11 +49,6 @@
     width: 100%;
   }
 
-  body {
-    background-color: white;
-    color: black;
-  }
-
   main {
     align-items: stretch;
     display: flex;
